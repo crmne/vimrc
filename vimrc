@@ -51,6 +51,7 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*Cap
 
 " Or use vividchalk
 colorscheme solarized
+set background=dark
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
