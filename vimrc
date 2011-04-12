@@ -51,7 +51,6 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*Cap
 
 " Or use vividchalk
 colorscheme solarized
-set background=dark
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
@@ -65,7 +64,7 @@ map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
 " Uncomment to use Jamis Buck's file opening plugin
-"map <Leader>t :FuzzyFinderTextMate<Enter>
+map <Leader>t :FuzzyFinderTextMate<Enter>
 
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
@@ -75,10 +74,10 @@ map <leader>tm :tabmove
 "vnoremap : ;
 
 " Automatic fold settings for specific files. Uncomment to use.
-" autocmd FileType ruby set foldmethod=syntax
+" autocmd FileType ruby setlocal foldmethod=syntax
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
 " For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
-" autocmd BufNewFile,BufRead *_spec.rb compiler rspec
+autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 
 
