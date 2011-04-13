@@ -85,3 +85,8 @@ map <D-/> :TComment<CR>
 " Use arrow keys to move between displayed lines
 map <down> gj
 map <up> gk
+
+" Use emacsian shortcuts to move at the start and end of the line in insert
+" mode
+imap <C-a> <ESC>I
+imap <C-e> <ESC>A
