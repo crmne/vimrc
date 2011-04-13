@@ -76,11 +76,12 @@ map <leader>tm :tabmove
 
 " For the MakeGreen plugin and Ruby RSpec.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
-map <Leader>] <Plug>MakeGreen " change from <Leader>t to <Leader>]
+" Change MakeGreen keybinding from <leader>t to <leader>]
+map <leader>] <Plug>MakeGreen
 
 " Comment lines like in TextMate
 map <D-/> :TComment<CR>
 
 " Use arrow keys to move between displayed lines
-map <Down> gj
-map <Up> gk
+map <down> gj
+map <up> gk
