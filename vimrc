@@ -78,3 +78,9 @@ map <leader>tm :tabmove
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
 map <Leader>] <Plug>MakeGreen " change from <Leader>t to <Leader>]
 
+" Comment lines like in TextMate
+map <D-/> :TComment<CR>
+
+" Use arrow keys to move between displayed lines
+map <Down> gj
+map <Up> gk
