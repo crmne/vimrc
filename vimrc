@@ -63,9 +63,6 @@ map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
-" Uncomment to use Jamis Buck's file opening plugin
-map <Leader>t :FuzzyFinderTextMate<Enter>
-
 " Controversial...swap colon and semicolon for easier commands
 "nnoremap ; :
 "nnoremap : ;
@@ -77,7 +74,7 @@ map <Leader>t :FuzzyFinderTextMate<Enter>
 " autocmd FileType ruby setlocal foldmethod=syntax
 " autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
 
-" For the MakeGreen plugin and Ruby RSpec. Uncomment to use.
+" For the MakeGreen plugin and Ruby RSpec.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
-
+map <Leader>] <Plug>MakeGreen " change from <Leader>t to <Leader>]
 
