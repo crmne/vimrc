@@ -43,7 +43,7 @@ set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
 " UNCOMMENT TO USE
 "set tabstop=2                    " Global tab width.
 "set shiftwidth=2                 " And again, related.
-"set expandtab                    " Use spaces instead of tabs
+set expandtab                     " Use spaces instead of tabs
 
 set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
@@ -64,19 +64,20 @@ map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
 " Controversial...swap colon and semicolon for easier commands
-"nnoremap ; :
-"nnoremap : ;
+nnoremap ; :
+nnoremap : ;
 
-"vnoremap ; :
-"vnoremap : ;
+vnoremap ; :
+vnoremap : ;
 
-" Automatic fold settings for specific files. Uncomment to use.
-" autocmd FileType ruby setlocal foldmethod=syntax
-" autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+" Automatic fold settings and indent style for specific files.
+autocmd FileType ruby setlocal foldmethod=syntax
+autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
+autocmd FileType c    setlocal cinoptions=>4s,l1,t0,(0,u0 shiftwidth=4
 
 " For the MakeGreen plugin and Ruby RSpec.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
-" Change MakeGreen keybinding from <leader>t to <leader>]
+" Change MakeGreen mapping from <leader>t to <leader>]
 map <leader>] <Plug>MakeGreen
 
 " Comment lines like in TextMate
@@ -84,7 +85,7 @@ map <D-/> :TComment<CR>
 
 " Use arrow keys to move between displayed lines
 map <down> gj
-map <up> gk
+map <up>   gk
 
 " Use emacsian shortcuts to move at the start and end of the line in insert
 " mode
