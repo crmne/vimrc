@@ -49,7 +49,7 @@ set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
-" Or use vividchalk
+" The best colorscheme ever.
 colorscheme solarized
 
 " Tab mappings.
@@ -77,6 +77,7 @@ autocmd FileType c    setlocal cinoptions=>4s,l1,t0,(0,u0 shiftwidth=4
 
 " For the MakeGreen plugin and Ruby RSpec.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
+
 " Change MakeGreen mapping from <leader>t to <leader>]
 map <leader>] <Plug>MakeGreen
 
@@ -87,7 +88,6 @@ map <D-/> :TComment<CR>
 map <down> gj
 map <up>   gk
 
-" Use emacsian shortcuts to move at the start and end of the line in insert
-" mode
+" Move at the start and end of the line in insert mode, the Emacs way
 imap <C-a> <ESC>I
 imap <C-e> <ESC>A
