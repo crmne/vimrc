@@ -94,3 +94,6 @@ imap <C-e> <ESC>A
 
 " Apply any changes of this file immediately after saving it
 autocmd bufwritepost .vimrc source $MYVIMRC
+
+" Map tenderlove's GithubLink to <leader>gh
+vnoremap <silent> <Leader>gh :call GithubLink()<CR>
