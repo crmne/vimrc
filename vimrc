@@ -73,7 +73,7 @@ vnoremap : ;
 " Automatic fold settings and indent style for specific files.
 autocmd FileType ruby setlocal foldmethod=syntax
 autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
-autocmd FileType c    setlocal cinoptions=>4s,l1,t0,(0,u0 shiftwidth=4
+autocmd FileType c    setlocal cinoptions=l1,t0,(0,u0 shiftwidth=4
 
 " For the MakeGreen plugin and Ruby RSpec.
 autocmd BufNewFile,BufRead *_spec.rb compiler rspec
