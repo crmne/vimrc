@@ -64,11 +64,11 @@ map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
 " Controversial...swap colon and semicolon for easier commands
-nnoremap ; :
-nnoremap : ;
-
-vnoremap ; :
-vnoremap : ;
+" nnoremap ; :
+" nnoremap : ;
+" 
+" vnoremap ; :
+" vnoremap : ;
 
 " Automatic fold settings and indent style for specific files.
 autocmd FileType ruby setlocal foldmethod=syntax
