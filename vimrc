@@ -88,10 +88,6 @@ map <D-/> :TComment<CR>
 map <down> gj
 map <up>   gk
 
-" Move at the start and end of the line in insert mode, the Emacs way
-imap <C-a> <ESC>I
-imap <C-e> <ESC>A
-
 " Apply any changes of this file immediately after saving it
 autocmd bufwritepost .vimrc,vimrc source $MYVIMRC
 
