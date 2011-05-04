@@ -83,6 +83,9 @@ map <leader>] <Plug>MakeGreen
 " Comment lines like in TextMate
 map <D-/> :TComment<CR>
 
+" For Objective-C enabled yacc files.
+autocmd BufNewFile,BufRead *.ym set filetype=yacc
+
 " Use arrow keys to move between displayed lines
 map <down> gj
 map <up>   gk
