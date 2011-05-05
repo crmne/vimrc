@@ -95,3 +95,6 @@ autocmd bufwritepost .vimrc,vimrc source $MYVIMRC
 
 " Map tenderlove's GithubLink to <leader>gh
 vnoremap <silent> <Leader>gh :call GithubLink()<CR>
+
+" Always use latex syntax
+let g:tex_flavor='latex'
