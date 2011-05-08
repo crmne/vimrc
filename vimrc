@@ -74,6 +74,7 @@ autocmd FileType ruby setlocal foldmethod=syntax
 autocmd FileType css  setlocal foldmethod=indent
 autocmd FileType c    setlocal cinoptions=l1,t0,(0,u0 shiftwidth=4
 autocmd FileType tex  setlocal spell
+autocmd FileType make setlocal tabstop=8 shiftwidth=8 noexpandtab
 
 " Specific files
 autocmd BufNewFile,BufRead  *_spec.rb     compiler rspec    " For the MakeGreen plugin and Ruby RSpec.
