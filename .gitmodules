@@ -1,9 +1,6 @@
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "bundle/msanders-snipmate.vim"]
-	path = bundle/msanders-snipmate.vim
-	url = http://github.com/msanders/snipmate.vim.git
 [submodule "bundle/tpope-vim-ragtag"]
 	path = bundle/tpope-vim-ragtag
 	url = http://github.com/tpope/vim-ragtag.git
