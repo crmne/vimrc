@@ -49,7 +49,7 @@ set laststatus=2                  " Show the status line all the time
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 colorscheme solarized             " The best colorscheme ever.
-set background=dark               " Background.
+set background=light              " Background.
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
