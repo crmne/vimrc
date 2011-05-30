@@ -1,6 +1,3 @@
-" Example Vim configuration.
-" Copy or symlink to ~/.vimrc or ~/_vimrc.
-
 set nocompatible                  " Must come first because it changes other options.
 
 silent! call pathogen#runtime_append_all_bundles()
@@ -73,7 +70,7 @@ map <leader>tm :tabmove
 autocmd FileType ruby setlocal foldmethod=syntax
 autocmd FileType css  setlocal foldmethod=indent
 autocmd FileType c    setlocal cinoptions=l1,t0,(0,u0 shiftwidth=4
-autocmd FileType tex  setlocal spell
+autocmd FileType tex  setlocal spell linebreak
 autocmd FileType make setlocal tabstop=8 shiftwidth=8 noexpandtab
 
 " Specific files
