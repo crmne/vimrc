@@ -74,8 +74,8 @@ autocmd FileType tex  setlocal spell linebreak
 autocmd FileType make setlocal tabstop=8 shiftwidth=8 noexpandtab
 
 " Specific files
-autocmd BufNewFile,BufRead  *_spec.rb     compiler rspec    " For the MakeGreen plugin and Ruby RSpec.
-autocmd BufWritePost        .vimrc,vimrc  source $MYVIMRC   " Apply any changes of this file immediately after saving it
+autocmd BufNewFile,BufRead  *_spec.rb           compiler rspec    " For the MakeGreen plugin and Ruby RSpec.
+autocmd BufWritePost        .vimrc,vimrc,_vimrc source $MYVIMRC   " Apply any changes of this file immediately after saving it
 autocmd BufNewFile,BufRead  *.ym          set filetype=yacc " For Objective-C enabled yacc files.
 
 " Change MakeGreen mapping from <leader>t to <leader>]
