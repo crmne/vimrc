@@ -52,3 +52,6 @@
 [submodule "bundle/vim-gist"]
 	path = bundle/vim-gist
 	url = https://github.com/mattn/gist-vim
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree
