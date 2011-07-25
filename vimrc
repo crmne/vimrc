@@ -67,7 +67,7 @@ map <leader>tm :tabmove
 " vnoremap : ;
 
 " Automatic fold settings and indent style for specific files.
-autocmd FileType ruby setlocal foldmethod=syntax
+" autocmd FileType ruby setlocal foldmethod=syntax
 autocmd FileType css  setlocal foldmethod=indent
 autocmd FileType c    setlocal cinoptions=l1,t0,(0,u0 shiftwidth=4
 autocmd FileType tex  setlocal spell linebreak
@@ -76,7 +76,7 @@ autocmd FileType make setlocal tabstop=8 shiftwidth=8 noexpandtab
 " Specific files
 autocmd BufNewFile,BufRead  *_spec.rb           compiler rspec    " For the MakeGreen plugin and Ruby RSpec.
 autocmd BufWritePost        .vimrc,vimrc,_vimrc source $MYVIMRC   " Apply any changes of this file immediately after saving it
-autocmd BufNewFile,BufRead  *.ym          set filetype=yacc " For Objective-C enabled yacc files.
+autocmd BufNewFile,BufRead  *.ym                set filetype=yacc " For Objective-C enabled yacc files.
 
 " Change MakeGreen mapping from <leader>t to <leader>]
 map <leader>] <Plug>MakeGreen
