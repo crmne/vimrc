@@ -48,6 +48,10 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*Cap
 colorscheme solarized             " The best colorscheme ever.
 set background=dark               " Background.
 
+" Change <leader> to ,
+let mapleader = ","
+let g:mapleader = ","
+
 " Tab mappings.
 map <leader>tt :tabnew<cr>
 map <leader>te :tabedit
@@ -86,6 +90,9 @@ map <D-/> :TComment<CR>
 
 " Fast file navigation with Command-T
 map <D-O> :CommandT<CR>
+
+" Indent and remove trailing whitespaces
+map <leader>iw gg=G:%s/\s\+$//e<cr>:noh<cr>
 
 " Use arrow keys to move between displayed lines
 map <down> gj
