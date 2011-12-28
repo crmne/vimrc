@@ -67,3 +67,6 @@
 [submodule "bundle/vim-commonkads"]
 	path = bundle/vim-commonkads
 	url = https://github.com/earcar/vim-commonkads.git
+[submodule "bundle/tomtom-vim-tcomment"]
+	path = bundle/tomtom-vim-tcomment
+	url = https://github.com/tomtom/tcomment_vim
