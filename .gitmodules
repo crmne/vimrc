@@ -43,9 +43,6 @@
 [submodule "bundle/bufexplorer"]
 	path = bundle/bufexplorer
 	url = https://github.com/vim-scripts/bufexplorer.zip
-[submodule "bundle/ultisnips"]
-	path = bundle/ultisnips
-	url = https://github.com/vim-scripts/UltiSnips
 [submodule "bundle/vim-gist"]
 	path = bundle/vim-gist
 	url = https://github.com/mattn/gist-vim
@@ -70,3 +67,6 @@
 [submodule "bundle/tomtom-vim-tcomment"]
 	path = bundle/tomtom-vim-tcomment
 	url = https://github.com/tomtom/tcomment_vim
+[submodule "bundle/ultisnips"]
+	path = bundle/ultisnips
+	url = https://github.com/rygwdn/ultisnips.git
